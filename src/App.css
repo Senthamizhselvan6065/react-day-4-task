@@ -1,38 +1,956 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,300;0,400;1,400&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar{
+   display: none;
+}
+
+.core{
+   width: 100%;
+   height: 100%;
+}
+
+/* Side Nav Bar */
+.side-bar{
+   width: 16%;
+   height: 100%;
+   background-color: rgb(29, 28, 28);
+   position: fixed;
+   left: 0;
+   top: 0;
+   box-sizing: border-box;
+   padding: 20px 10px;
+   display: flex;
+   justify-content: center;
+}
+.side-bar > .nav-buttons{
+   display: flex;
+   justify-content: center;
+   margin-top: 38px;
+}
+.side-bar > .nav-buttons > ul > li{
+     list-style: none;
+     padding: 8px;
+     margin-top: 16px;
+     border-radius: 5px;
+}
+.link-nav{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #f4f7ff;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.link-nav > span{
+   font-size: 30px;
+   margin-right: 8px;
+   padding-top: 4px;
+}
+.link-nav > .link-nav-1{
+   color: red;
+}
+.link-nav > .link-nav-2{
+   color: rgb(0, 255, 157);
+}
+
+.link-nav > .link-nav-3{
+   color: rgb(153, 0, 255);
+}
+
+.link-nav > .link-nav-4{
+   color: rgb(238, 2, 206);
+}
+
+.link-nav > .link-nav-5{
+   color: rgb(0, 255, 242);
+}
+
+.link-nav > .link-nav-6{
+   color: rgb(255, 0, 64);
+}
+
+
+
+.core > .content-flex{
+    position: relative;
+    left: 16%;
+    width: 84%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Title */
+.title{
+   width: 100%;
+   box-sizing: border-box;
+   position: fixed;
+   top: 0;
+   font-size: 28px;
+   letter-spacing: 1px;
+   font-weight: 500;
+   padding: 14px 40px;
+   background-color: rgb(29, 28, 28);
+   color: rgb(0, 68, 255);
+}
+
+/* Content */
+.content{
+  width: 100%;
+  height: 100%;
+  margin-top:68px;
+}
+
+
+/* Button Card */
+.button{
+   width: 100%;
+   height: 100%;
+   color: #fff;
+   background-color: rgb(12, 12, 12);
+   padding: 20px 0;
+}
+
+.circle-buttons{
+   width: 500px;
+   height: 500px;
+   box-sizing: border-box;
+   background-color: rgb(22, 20, 20);
+   border-radius: 6px;
+   box-shadow: 5px 5px 10px black;
+}
+.circle-buttons > h3{
+   padding: 30px 30px 5px;
+   letter-spacing: 1px;
+   color: rgb(0, 68, 255);
+   font-size: 25px;
+   font-weight: 400;
+}
+.circle-buttons > p{
+   padding: 20px 30px;
+   letter-spacing: 1px;
+   font-weight: 400;
+}
+.circle-buttons > .btn-circle{
+  padding: 5px 30px;
+}
+.circle-buttons > .btn-circle > p{
+    color: rgb(7, 243, 243);
+    padding-bottom: 10px;
+}
+.circle-buttons > .btn-circle > span{
+  font-size: 30px;
+  margin-right: 16px;
+}
+.circle-buttons > .btn-sm{
+   padding: 10px 30px;
+}
+.circle-buttons > .btn-sm p{
+    color: rgb(7, 243, 243);
+    padding-bottom: 10px;
+}
+.circle-buttons > .btn-sm > span{
+  font-size: 24px;
+  margin-right: 16px;
+}
+.circle-buttons > .btn-lg{
+  padding: 10px 30px;
+}
+.circle-buttons > .btn-lg p{
+    color: rgb(7, 243, 243);
+    padding-bottom: 10px;
+}
+.circle-buttons > .btn-lg > span{
+  font-size: 40px;
+  margin-right: 16px;
+}
+.fa-1{
+   color: rgb(0, 60, 255);
+}
+.fa-2{
+  color: rgb(6, 241, 104);
+}
+.fa-3{
+  color: rgb(6, 241, 241);
+}
+.fa-4{
+  color: rgb(251, 255, 8);
+}
+.fa-5{
+  color: rgb(255, 2, 2);
+}
+
+.brand-buttons{
+   width: 500px;
+   height: 500px;
+   box-sizing: border-box;
+   background-color: rgb(22, 20, 20);
+   border-radius: 6px;
+   box-shadow: 5px 5px 10px black;
+}
+
+.brand-buttons > h3{
+  padding: 30px 30px 5px;
+  letter-spacing: 1px;
+  color: rgb(0, 68, 255);
+  font-size: 25px;
+  font-weight: 400;
+}
+.brand-buttons > p{
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.brand-buttons > button{
+   width: 90%;
+   padding: 10px;
+   margin: 13px 5%;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+}
+
+.btn-google{
+   background-color: rgb(255, 30, 0);
+   color: #fff;
+   font-size: 17px;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+.btn-facebook{
+  background-color: rgb(0, 47, 255);
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.button-box{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   padding: 24px 0;
+}
+
+.split-button{
+   width: 94%;
+   height: 500px;
+   background-color: rgb(22, 20, 20);
+   margin: 20px 3%;
+   border-radius: 6px;
+   box-sizing: border-box;
+   box-shadow: 5px 5px 10px black;
+}
+
+.split-button > h3{
+   padding: 20px;
+   font-size: 28px;
+   text-align: center;
+   color: rgb(0, 102, 255);
+   font-weight: 400;
+   letter-spacing: 1px;
+}
+
+.split-button > p{
+   padding: 4px 30px;
+   font-weight: normal;
+}
+
+.button-flex{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.button-1{
+   width: 400px;
+   height: 300px;
+   box-shadow: 4px 4px 10px rgb(17, 17, 17);
+   box-sizing: border-box;
+   padding: 14px 20px;
+   margin-top: 20px;
+   box-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+
+.button-1 > .split{
+   display: block;
+   font-size: 15px;
+   letter-spacing: 1px;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   padding: 6px 10px;
+   margin-left: 20px;
+   margin-top: 14px;
+}
+.button-1 > .split > span{
+  font-size: 20px;
+  margin-right: 7px;
+  padding: 2px 8px;
+}
+.split-primary{
+   background-color: blue;
+   color: #ffffffda;
+}
+.split-success{
+  background-color: rgb(0, 255, 64);
+  color: #000000;
+}
+.split-info{
+  background-color: rgb(0, 204, 255);
+  color: #000000;
+}
+.split-warning{
+  background-color: rgb(251, 255, 0);
+  color: #000000;
+}
+.split-danger{
+  background-color: rgb(255, 0, 0);
+  color: #000000;
+}
+
+.button-2{
+   width: 400px;
+   height: 300px;
+   box-sizing: border-box;
+   padding: 20px 30px;
+   box-shadow: 4px 4px 10px rgb(0, 0, 0);
+   margin-top: 20px;
+}
+
+.button-2 > p{
+  letter-spacing: 1px;
+  padding: 10px;
+}
+.button-2 > .split{
+   display: block;
+   padding: 8px;
+   letter-spacing: 1px;
+   margin: 14px;
+   border-radius: 5px;
+   padding: 8px 14px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.button-2 > .split > span{
+  padding: 4px 8px;
+  font-size: 20px;
+}
+.split-small{
+  background-color: rgb(255, 38, 0);
+}
+.split-large{
+  background-color: rgb(0, 132, 255);
+}
+
+.split:hover{
+   background-color: rgb(255, 0, 106);
+   transition: all 0.3s ease-in-out;
+   box-shadow: 2px 2px 8px #fff;
+   cursor: pointer;
+   color: #fff;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+.cards{
+  width: 100%;
+  height: 100%; 
+  background-color: rgb(17, 17, 17);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.card-box-1{
+   width: 100%;
+   height: 400px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+.card-box-1 > .box{
+    width: 500px;
+    height: 120px;
+    background-color: rgb(31, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-radius: 6px;
+    box-shadow: 10px 10px 20px black;
+    margin: 20px;
+    color: #fff;
+}
+
+.card-box-1 > .box-1{
+   border-left: 4px solid rgb(255, 0, 140);
+}
+.card-box-1 > .box-2{
+  border-left: 4px solid rgb(0, 248, 165);
+}
+.card-box-1 > .box-3{
+  border-left: 4px solid rgb(0, 255, 255);
+}
+.card-box-1 > .box-4{
+  border-left: 4px solid rgb(0, 4, 255);
+}
+
+.card-box-1 > .box > h4{
+   font-size: 20px;
+   letter-spacing: 1px;
+}
+.card-box-1 > .box > p{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card-box-1 > .box-3 > .input{
+   display: flex;
+   justify-content: space-around;
+}
+.range{
+  margin-left: 70px;
+  width: 200px;
+}
+
+.card-box-2{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   padding-bottom: 10px;
+}
+
+.card-box-2 > .content{
+    width: 500px;
+    height: 260px;
+    background-color: rgb(29, 28, 28);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 20px black;
+    color: #fff;
+}
+.card-box-2 > .content > h3{
+   padding: 10px;
+   color: rgb(0, 89, 255);
+}
+.card-box-2 > .content > p{
+  padding: 10px;
+  line-height: 30px;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Login Page */
+
+.login{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(12, 12, 12);
+}
+.login-inner-card{
+   width: 500px;
+   height: 510px;
+   background-color: rgba(36, 35, 35, 0.993);
+   border-radius: 5px;
+   position: relative;
+   right: 44px;
+   bottom: 40px;
+  box-shadow: -2px -2px 20px #00f5f5;
+}
+.login-card{
+  width: 500px;
+  height: 510px;
+  background-color: rgba(36, 35, 35, 0.993);
+  border-radius: 5px;
+  position: absolute;
+  left: 90px;
+  top: 82px;
+  box-shadow: 7px 7px 20px rgb(248, 3, 85);
+}
+.login-main-card{
+    width: 500px;
+    height: 510px;
+    background-color: rgb(24, 23, 23);
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: absolute;
+    right: 48px;
+    bottom: 42px;
+    box-shadow: 10px 10px 24px;
+}
+.login-main-card > h3{
+  padding: 26px 20px 20px;
+  font-size: 30px;
+  font-weight: 500;
   text-align: center;
+  color: #0648ff;
+  letter-spacing: 1px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-main-card > .input-filed{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-main-card > .input-filed > input{
+   display: block;
+   width: 370px;
+   padding: 10px 10px 6px;
+   border: none;
+   outline: none;
+   margin-top: 18px;
+   margin-bottom: 5px;
+   border-bottom: 1px solid rgb(1, 247, 255);
+   background-color: transparent;
+   color: #03ffea;
+   font-size: 15px;
+   letter-spacing: 1px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.check-box{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 60px;
+    margin-top: 10px;
+}
+.check-box > label{
+    color: #03ffea;
+    letter-spacing: 1px;
+}
+.check-box > input{
+  margin-left: 4px;
+  margin-right: 8px;
+}
+.login-button{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+}
+.login-button > button{
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   margin-top: 17px;
+   cursor: pointer;
+}
+.login-button > button > span{
+   margin-right: 8px;
+}
+.login-button > button:hover{ 
+    color: #fff;
+    transition: all 0.3s ease-in;
+} 
+.login-btn{
+   background-color: rgb(162, 0, 255);
+   padding: 10px;
+   font-size: 17px;
+   font-weight: 550;
+   letter-spacing: 1px;
+   width: 180px;
+}
+.login-google{
+  background-color: rgb(255, 0, 21);
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  width: 360px;
+}
+.login-facebook{
+  background-color: rgb(0, 17, 255);
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  width: 360px;
 }
 
-.App-link {
-  color: #61dafb;
+.login-main-card > .other{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 16px 10px;
+}
+.login-main-card > .other > p{
+   letter-spacing: 1px;
+   padding: 2px;
+   color: #f5f5f5;
+   cursor: pointer;
+   margin: 10px;
+}
+.login-main-card > .other > p:hover{
+   color: rgb(0, 47, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* -------------------------------------------------------------------- */
+
+.create-account{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(12, 12, 12);
+}
+
+.create-card{
+   width: 800px;
+   height: 630px;
+   background-color: rgb(32, 32, 32);
+   box-sizing: border-box;
+   border-radius: 5px;
+   box-shadow: 14px 14px 20px;
+}
+.create-card > h2{
+   text-align: center;
+   padding: 20px 20px 0px;
+   font-size: 30px;
+   letter-spacing: 1px;
+   color: rgb(0, 68, 255);
+   font-weight: 500;
+}
+
+.create-card > .input-filed{
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.create-card > .input-filed > input{
+   width: 500px;
+   padding: 12px 10px 6px;
+   margin-top: 16px;
+   border: none;
+   outline: none;
+   background-color: transparent;
+   border-bottom: 1px solid #01fad0;
+   font-size: 16px;
+   color: #ffffff;
+   letter-spacing: 1px;
+}
+.create-card > .input-filed > .register{
+   padding: 12px 20px;
+   margin-top: 30px;
+   border: none;
+   outline: none;
+   width: 320px;
+   font-size: 18px;
+   font-weight: 550;
+   border-radius: 5px;
+   background-color: rgb(0, 110, 255);
+}
+.create-card > .input-filed > .register:hover{
+   color: #fff;
+   cursor: pointer;
+}
+.create-card > .create-account-button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 10px;
+}
+.create-card > .create-account-button > button{
+   width: 500px;
+   padding: 10px;
+   border: none;
+   outline: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   font-size: 15px;
+   font-weight: 550;
+}
+.create-card > .create-account-button > button:hover{
+   color: #fff;
+   transition: all 0.3s ease-in;
+   cursor: pointer;
+}
+.create-card > .create-account-button > .create-btn-facebook{
+    background-color: rgb(0, 89, 255);
+}
+.create-card > .create-account-button > .create-btn-google{
+   background-color: rgb(255, 81, 0);
+}
+.create-card > .create-account-button > button > span{
+   margin-right: 10px;
+   font-size: 20px;
+}
+.create-card > .forger-password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.create-card > .forger-password > p{
+   padding: 8px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   color: #fff;
+   cursor: pointer;
+}
+.create-card > .forger-password > p:hover{
+    color: rgb(0, 81, 255);
+}
+
+/* --------------------------------------------------------------------- */
+
+/* ForgetPage */
+.forget{
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(12, 12, 12);
+   display: flex;
+   justify-content: center;
+}
+
+.forget .forget-inner-card{
+   width: 500px;
+   height: 300px;
+   background-color: rgb(48, 47, 47);
+   position: relative;
+   right: 48px;
+   top: 40px;
+   border-radius: 5px;
+   box-shadow: -1px -1px 20px #fff;
+}
+.forget .forget-middle-card{
+   width: 500px;
+   height: 300px;
+   background-color: rgb(48, 47, 47);
+   box-shadow: 2px 2px 20px rgb(255, 0, 0);
+   position: absolute;
+   top: 294px;
+   left:94px;
+   border-radius: 5px;
+}
+.forget .forget-main-card{
+   width: 500px;
+   height: 500px;
+   background-color: rgb(31, 29, 29);
+   box-shadow: 10px 10px 20px;
+   position: absolute;
+   bottom: 50px;
+   right: 50px;
+   border-radius: 5px;
+   box-sizing: border-box;
+   padding: 10px;
+}
+.forget-main-card > h2{
+    text-align: center;
+    font-size: 28px;
+    padding: 16px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(255, 0, 119);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.forget-main-card > p{
+   text-align: center;
+   font-size: 18px;
+   padding: 10px;
+   letter-spacing: 1px;
+   color: #ffffff;
+   line-height: 30px;
+}
+
+.forget-main-card > .input-filed{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.forget-main-card > .input-filed > input{
+   padding: 10px 10px 4px;
+   margin-top: 25px;
+   width: 360px;
+   border: none;
+   outline: none;
+   margin-bottom: 14px;
+   background-color: transparent;
+   border-bottom: 1px solid rgb(255, 95, 2);
+   font-size: 17px;
+   color: #fff;
+   letter-spacing: 2px;
+}
+.forget-main-card > .input-filed > .reset-password{
+   padding: 10px;
+   margin-top: 24px;
+   width: 220px;
+   border: none;
+   outline: none;
+   margin-bottom: 20px;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   border-radius: 5px;
+   background-color: rgb(255, 0, 106);
+   cursor: pointer;
+}
+.forget-main-card > .input-filed > .reset-password:hover{
+    color: #fff;
+}
+.forget-main-card > .create{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 2px;
+   color: #fff;
+}
+.forget-main-card > .create > p{
+   margin-top: 10px;
+   font-size: 17px;
+   letter-spacing: 1px;
+   font-weight: 500;
+   color: #fefcff;
+   cursor: pointer;
+}
+.forget-main-card > .create > p:hover{
+   color: rgb(0, 26, 255);
+}
+
+
+/* Dashboard */
+.content-color{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.content-color > .color{
+    width: 500px;
+    height: 120px;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 40px;
+    box-shadow: 10px 10px 20px;
+}
+.color-primary{
+    background-color: rgb(0, 140, 255);
+}
+.color-success{
+   background-color: rgba(0, 214, 107, 0.952);
+}
+.color-info{
+   background-color: rgba(0, 225, 255, 0.966);
+}
+.color-warning{
+   background-color: rgb(255, 208, 0);
+}
+.color-danger{
+   background-color: rgb(255, 0, 0);
+}
+.color-dark{
+   background-color: rgb(25, 25, 26);
+}
+
+.color > h3{
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.color > p{
+   color: #fff;
+   letter-spacing: 1px;
+   font-weight: 500;
+   font-size: 16px;
+}
+
+.content-box{
+   width: 100%;
+   height: 250px;
+   padding:20px 60px;
+   box-sizing: border-box;
+}
+.content-box > h2{
+   text-align: center;
+   font-size: 30px;
+   font-weight: 500;
+   padding: 10px;
+   color: blue;
+   letter-spacing: 1px;
+}
+.content-box > p{
+   font-size: 17px;
+   font-weight: 500;
+   padding: 10px;
+   color: rgb(252, 252, 253);
+   letter-spacing: 1px;
+}
+.dashboard{
+   width: 100%;
+   height: 100%;
+   background-color: rgb(24, 23, 23);
+   padding-bottom: 14px;
+}
+
+
+.page-not{
+   width: 100%;
+   height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.page-not h1{
+   margin-top: 100px;
+   letter-spacing: 1px;
+   font-weight: 500;
+}
+
+.page-not button{
+   margin-top: 20px;
+   letter-spacing: 1px;
+   font-weight: 500;
+   background-color: orangered;
+   color: #fff;
+   border: none;
+   outline: none;
+   padding: 12px 30px;
+   font-size: 18px;
+   border-radius: 3px;
+   cursor: pointer;
 }
